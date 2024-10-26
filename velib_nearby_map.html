@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ecab62ff39a0ce063759264c0122dc9e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ecab62ff39a0ce063759264c0122dc9e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ecab62ff39a0ce063759264c0122dc9e = L.map(
+                "map_ecab62ff39a0ce063759264c0122dc9e",
+                {
+                    center: [48.8554814, 2.3604077],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e0f67941dcdc657cd9c5412b4a0e848c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e0f67941dcdc657cd9c5412b4a0e848c.addTo(map_ecab62ff39a0ce063759264c0122dc9e);
+        
+    
+            var marker_7b8fb716c5c0be4d1a0815827e5dc60c = L.marker(
+                [48.853899645527, 2.3569472506642],
+                {}
+            ).addTo(map_ecab62ff39a0ce063759264c0122dc9e);
+        
+    
+        var popup_f3259de29bbba7be73dac602b19acd2f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eae63ac0403c276ccbdd7a84328aeb52 = $(`<div id="html_eae63ac0403c276ccbdd7a84328aeb52" style="width: 100.0%; height: 100.0%;"><i>Hôtel de Ville - Pont-Marie</i><br>308 mètres</div>`)[0];
+                popup_f3259de29bbba7be73dac602b19acd2f.setContent(html_eae63ac0403c276ccbdd7a84328aeb52);
+            
+        
+
+        marker_7b8fb716c5c0be4d1a0815827e5dc60c.bindPopup(popup_f3259de29bbba7be73dac602b19acd2f)
+        ;
+
+        
+    
+    
+            marker_7b8fb716c5c0be4d1a0815827e5dc60c.bindTooltip(
+                `<div>
+                     <b>Hôtel de Ville - Pont-Marie</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f79eaee3016aef1ab11abc7dcdd1a57 = L.marker(
+                [48.855949910497, 2.3563823103905],
+                {}
+            ).addTo(map_ecab62ff39a0ce063759264c0122dc9e);
+        
+    
+        var popup_dd59a94d6c92f3ba3340d03cdd14f5b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_170c27d4885e7b98b5dce5a80968b8f0 = $(`<div id="html_170c27d4885e7b98b5dce5a80968b8f0" style="width: 100.0%; height: 100.0%;"><i>Mairie du 4ème</i><br>299 mètres</div>`)[0];
+                popup_dd59a94d6c92f3ba3340d03cdd14f5b6.setContent(html_170c27d4885e7b98b5dce5a80968b8f0);
+            
+        
+
+        marker_4f79eaee3016aef1ab11abc7dcdd1a57.bindPopup(popup_dd59a94d6c92f3ba3340d03cdd14f5b6)
+        ;
+
+        
+    
+    
+            marker_4f79eaee3016aef1ab11abc7dcdd1a57.bindTooltip(
+                `<div>
+                     <b>Mairie du 4ème</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_abad80571bdf50618357e3cb75acbe05 = L.marker(
+                [48.852639866625, 2.3607301712036],
+                {}
+            ).addTo(map_ecab62ff39a0ce063759264c0122dc9e);
+        
+    
+        var popup_39616815454599292276bcac685a77e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cddff1471a92044202cbc8d86c8d4bf0 = $(`<div id="html_cddff1471a92044202cbc8d86c8d4bf0" style="width: 100.0%; height: 100.0%;"><i>Village Saint-Paul</i><br>316 mètres</div>`)[0];
+                popup_39616815454599292276bcac685a77e1.setContent(html_cddff1471a92044202cbc8d86c8d4bf0);
+            
+        
+
+        marker_abad80571bdf50618357e3cb75acbe05.bindPopup(popup_39616815454599292276bcac685a77e1)
+        ;
+
+        
+    
+    
+            marker_abad80571bdf50618357e3cb75acbe05.bindTooltip(
+                `<div>
+                     <b>Village Saint-Paul</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_169c98651c720a49c5b517835aafe615 = L.marker(
+                [48.858158956779, 2.3647149920992],
+                {}
+            ).addTo(map_ecab62ff39a0ce063759264c0122dc9e);
+        
+    
+        var popup_dec88226156bd4966302d075c5da218a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47a89faf3aa3a4bb36e0efa015c0956c = $(`<div id="html_47a89faf3aa3a4bb36e0efa015c0956c" style="width: 100.0%; height: 100.0%;"><i>Saint-Gilles - Turenne</i><br>434 mètres</div>`)[0];
+                popup_dec88226156bd4966302d075c5da218a.setContent(html_47a89faf3aa3a4bb36e0efa015c0956c);
+            
+        
+
+        marker_169c98651c720a49c5b517835aafe615.bindPopup(popup_dec88226156bd4966302d075c5da218a)
+        ;
+
+        
+    
+    
+            marker_169c98651c720a49c5b517835aafe615.bindTooltip(
+                `<div>
+                     <b>Saint-Gilles - Turenne</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a76a94566a155bd98dbc40e38c19b3d = L.marker(
+                [48.8578329, 2.3622643],
+                {}
+            ).addTo(map_ecab62ff39a0ce063759264c0122dc9e);
+        
+    
+        var popup_7aea3845c6c74b0f5a7d747ef51b43d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60e041155560e52acb35d94a316458d5 = $(`<div id="html_60e041155560e52acb35d94a316458d5" style="width: 100.0%; height: 100.0%;"><i>Payenne - Square George Caïn</i><br>294 mètres</div>`)[0];
+                popup_7aea3845c6c74b0f5a7d747ef51b43d3.setContent(html_60e041155560e52acb35d94a316458d5);
+            
+        
+
+        marker_6a76a94566a155bd98dbc40e38c19b3d.bindPopup(popup_7aea3845c6c74b0f5a7d747ef51b43d3)
+        ;
+
+        
+    
+    
+            marker_6a76a94566a155bd98dbc40e38c19b3d.bindTooltip(
+                `<div>
+                     <b>Payenne - Square George Caïn</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6c62cdaaf1b45d0424c64643055cb6cb = L.marker(
+                [48.8512971, 2.3624535],
+                {}
+            ).addTo(map_ecab62ff39a0ce063759264c0122dc9e);
+        
+    
+        var popup_85f7065207351e3a36072d956965ea40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c1e13f5f7dd71ca8374fd77491f3dcf = $(`<div id="html_3c1e13f5f7dd71ca8374fd77491f3dcf" style="width: 100.0%; height: 100.0%;"><i>Quai des Célestins - Henri IV</i><br>488 mètres</div>`)[0];
+                popup_85f7065207351e3a36072d956965ea40.setContent(html_3c1e13f5f7dd71ca8374fd77491f3dcf);
+            
+        
+
+        marker_6c62cdaaf1b45d0424c64643055cb6cb.bindPopup(popup_85f7065207351e3a36072d956965ea40)
+        ;
+
+        
+    
+    
+            marker_6c62cdaaf1b45d0424c64643055cb6cb.bindTooltip(
+                `<div>
+                     <b>Quai des Célestins - Henri IV</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f1199064a563b6433f62c9f12ea1b08b = L.marker(
+                [48.858256413365815, 2.35821794718504],
+                {}
+            ).addTo(map_ecab62ff39a0ce063759264c0122dc9e);
+        
+    
+        var popup_9c6ce94207fd588737f3896ff3949228 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e97404730269b24d0ffd22d723f9eff0 = $(`<div id="html_e97404730269b24d0ffd22d723f9eff0" style="width: 100.0%; height: 100.0%;"><i>Vieille du Temple - Francs Bourgeois</i><br>347 mètres</div>`)[0];
+                popup_9c6ce94207fd588737f3896ff3949228.setContent(html_e97404730269b24d0ffd22d723f9eff0);
+            
+        
+
+        marker_f1199064a563b6433f62c9f12ea1b08b.bindPopup(popup_9c6ce94207fd588737f3896ff3949228)
+        ;
+
+        
+    
+    
+            marker_f1199064a563b6433f62c9f12ea1b08b.bindTooltip(
+                `<div>
+                     <b>Vieille du Temple - Francs Bourgeois</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_02d0c706d940afa9e64f1b762ab7814a = L.marker(
+                [48.855692253233, 2.3579058051109],
+                {}
+            ).addTo(map_ecab62ff39a0ce063759264c0122dc9e);
+        
+    
+        var popup_19d7282e49494730090e716dfcf0c48a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc2036c0bdaaf4ed8e3e1a079ef7c9eb = $(`<div id="html_cc2036c0bdaaf4ed8e3e1a079ef7c9eb" style="width: 100.0%; height: 100.0%;"><i>Tiron - Rivoli</i><br>185 mètres</div>`)[0];
+                popup_19d7282e49494730090e716dfcf0c48a.setContent(html_cc2036c0bdaaf4ed8e3e1a079ef7c9eb);
+            
+        
+
+        marker_02d0c706d940afa9e64f1b762ab7814a.bindPopup(popup_19d7282e49494730090e716dfcf0c48a)
+        ;
+
+        
+    
+    
+            marker_02d0c706d940afa9e64f1b762ab7814a.bindTooltip(
+                `<div>
+                     <b>Tiron - Rivoli</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_943534052d7dcab2f612cea3fb3cd8ab = L.marker(
+                [48.8550222, 2.3612322],
+                {}
+            ).addTo(map_ecab62ff39a0ce063759264c0122dc9e);
+        
+    
+        var popup_ca1d0c3aca560f15ea48a853a52eca9c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c63abf5a83d128619de8c6d3e301d2f6 = $(`<div id="html_c63abf5a83d128619de8c6d3e301d2f6" style="width: 100.0%; height: 100.0%;"><i>Saint-Antoine Sévigné</i><br>79 mètres</div>`)[0];
+                popup_ca1d0c3aca560f15ea48a853a52eca9c.setContent(html_c63abf5a83d128619de8c6d3e301d2f6);
+            
+        
+
+        marker_943534052d7dcab2f612cea3fb3cd8ab.bindPopup(popup_ca1d0c3aca560f15ea48a853a52eca9c)
+        ;
+
+        
+    
+    
+            marker_943534052d7dcab2f612cea3fb3cd8ab.bindTooltip(
+                `<div>
+                     <b>Saint-Antoine Sévigné</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_355a3c649647c8a45cd31573230f0b72 = L.marker(
+                [48.85355351439652, 2.3639122769236565],
+                {}
+            ).addTo(map_ecab62ff39a0ce063759264c0122dc9e);
+        
+    
+        var popup_7440054d562270a13862a76ff86caaa9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8f694eb137f02a13eb27e8e4bf389f6 = $(`<div id="html_b8f694eb137f02a13eb27e8e4bf389f6" style="width: 100.0%; height: 100.0%;"><i>Neuve Saint-Pierre - Beautreillis</i><br>334 mètres</div>`)[0];
+                popup_7440054d562270a13862a76ff86caaa9.setContent(html_b8f694eb137f02a13eb27e8e4bf389f6);
+            
+        
+
+        marker_355a3c649647c8a45cd31573230f0b72.bindPopup(popup_7440054d562270a13862a76ff86caaa9)
+        ;
+
+        
+    
+    
+            marker_355a3c649647c8a45cd31573230f0b72.bindTooltip(
+                `<div>
+                     <b>Neuve Saint-Pierre - Beautreillis</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
